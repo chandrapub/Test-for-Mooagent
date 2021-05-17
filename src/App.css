@@ -20,8 +20,7 @@ header{
   padding: 5%;
 }
 
-.mobile-image-section {
-  background-image: url('./assets/images/MobileBackground.png');
+.image-section {
   background-repeat: no-repeat; 
   background-size: cover;
   display: flex;
@@ -29,13 +28,12 @@ header{
   align-items: center;
 }
 
+.mobile-image-section {
+  background-image: url('./assets/images/MobileBackground.png');
+}
+
 .desktop-image-section {
   background-image: url('./assets/images/DesktopBackground.png');
-  background-repeat: no-repeat; 
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .mobile-image-section img {
@@ -46,11 +44,11 @@ header{
   width: 85%;
 }
 
-.mobile-info {
+.info {
   margin: 8% auto;
 }
 
-.mobile-info button {
+.info button {
   margin: 5% auto;
   border-color: transparent;
   outline: none;
@@ -59,16 +57,30 @@ header{
   font-weight: bold;
 }
 
-.mobile-list-items {
+.info button:nth-of-type(2){
+  margin-left: 20px;
+}
+
+.list-items {
   list-style: none;
-  counter-reset: custom-counter;
 }
 
-.mobile-list-items li {
-  counter-increment: custom-counter;
+.list-items li {
+  display: grid;
+  grid-template-columns: 5% 95%;
 }
 
-.mobile-list-items li::before {
-  content: counter(custom-counter) "| ";
+.list-items span:first-of-type {
   color: #ffb700;
+  display: flex;
+  align-items: center;
+}
+
+.list-items hr {  
+  -webkit-transform:rotate(90deg);
+  color: #ffb700;
+  width: 50px;
+  height: 0;
+  border-width: 0.1px;
+  opacity: 0.4;
 }

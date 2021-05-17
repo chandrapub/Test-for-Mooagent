@@ -6,7 +6,7 @@ export default function MobileVersion() {
     return (
         <div className="mobile-section">
             <MobileInfoSection />
-            <div className="mobile-image-section"><img src={MoodagentImage} alt="Moodagent" /></div>
+            <div className="image-section mobile-image-section"><img src={MoodagentImage} alt="Moodagent" /></div>
         </div>
     )
 }
