@@ -1,7 +1,58 @@
 .app {
+  box-sizing: border-box;
   color: white;
   font-size: 15px;
   font-weight: normal;
+}
+
+.navbar {
+  background-color: black;
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links ul li {
+  margin-right: 8%;
+}
+
+.nav-buttons {
+  display: flex;
+  width: 16%;
+}
+
+.nav-buttons button {
+  margin: 5% auto;
+  border-color: transparent;
+  outline: none;
+  padding: 1% 3%;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.nav-buttons button:first-of-type {
+  background-color: transparent;
+  color: white;
+}
+
+main {
+  margin-top: 5%;
 }
 
 header{
@@ -17,7 +68,7 @@ header{
 }
 
 .mobile-info-section, .desktop-info-section {
-  padding: 5%;
+  padding: 5% 10%;
 }
 
 .image-section {
@@ -46,6 +97,8 @@ header{
 
 .info {
   margin: 8% auto;
+  position: relative;
+  right: 8%;
 }
 
 .info button {
@@ -78,8 +131,9 @@ header{
 
 .list-items hr {  
   -webkit-transform:rotate(90deg);
-  color: #ffb700;
-  width: 50px;
+  transform: rotate(90deg);
+  background-color: #ffb700;
+  width: 15em;
   height: 0;
   border-width: 0.1px;
   opacity: 0.4;
